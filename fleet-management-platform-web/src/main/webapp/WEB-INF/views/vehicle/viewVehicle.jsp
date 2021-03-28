@@ -240,7 +240,7 @@
     <div class="col-md-6">
                                  </div>
      <div class="col-6">
-     <form:form method="post" id="vehicle_add" class="card" action="./addVehicle" modelAttribute="vehicleData"> 
+     <form:form method="post" id="vehicle_add" class="card" action="${requestContextPath}/vehicle/updateVehicle" modelAttribute="vehicleData"> 
      
     <%-- <form method="post" id="vehicle_add" class="card" action="Vehicle Management.html/ Add Vehicle/insertVehicle"> --%>
                 <div class="card-body">
@@ -248,7 +248,8 @@
                   <h3 class="card p-4 card-title bg-light border-0"></h3>
 
                   <div class="row">
-                   <input type="hidden" name="v_id" id="v_id">
+                   <!-- <input type="hidden" name="v_id" id="v_id"> -->
+                   <form:hidden path="v_id" id="v_id"/>
   <div class="container">
 
 
@@ -318,7 +319,7 @@
                 </div>
                    <div class="col-sm-6 col-lg-11">
                 <div class="card-footer text-right">
-                  <button type="submit" class="btn btn-primary btn-lg">AddVehicle</button>
+                  <button type="submit" class="btn btn-primary btn-lg">update</button>
                  <!-- <a class="btn btn-danger" href="Add Vehicle.html" title="Add Vehicle">Add Vehicle</a>-->
                 </div>
               <%-- </form> --%>
