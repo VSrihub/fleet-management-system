@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Razes Fleet Management">
+  <meta name="author" content="GeeksLabs">
+  <meta name="keyword" content="">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Inc&Exp Managenent|Razes Fleet Management</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap theme -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- full calendar css-->
+  <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+  <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+  <!-- easy pie chart-->
+  <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/fullcalendar.css">
+  <link href="css/widgets.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+  <link href="css/xcharts.min.css" rel=" stylesheet">
+  <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
+
+
+
+   <script src="http://scripts.getsourcecodes.com/vms/assets/js/common/js/jquery-3.4.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/table/jquery.dataTables.min.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/table/dataTables.bootstrap4.min.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/js/vendors/jquery.validate.min.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/datepicker/bootstrap-datepicker.js"></script>
+
+  <script src="http://scripts.getsourcecodes.com/vms/assets/js/vendors/selectize.min.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/charts-c3/apexcharts.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/js/require.min.js"></script>
+  <script>
+  </script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/js/dashboard.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/charts-c3/plugin.js"></script>
+  <script src="http://scripts.getsourcecodes.com/vms/assets/plugins/input-mask/plugin.js"></script>
+    <script src="http://scripts.getsourcecodes.com/vms/assets/js/custom.js"></script>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+    
+ 
+</head>
+
+<body>
+  <!-- container section start -->
+  <section id="container" class="">
+
+
+    <header class="header dark-bg">
+      <div class="toggle-nav">
+        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+      </div>
+
+      <!--logo start-->
+      <a href="index.html" class="logo">Razes  <span class="lite">Fleet Management</span></a>
+      <!--logo end-->
+
+      <div class="nav search-row" id="top_menu">
+        <!--  search form start -->
+        <ul class="nav top-menu">
+          <li>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
+            </form>
+          </li>
+        </ul>
+        <!--  search form end -->
+      </div>
+
+        <!-- notificatoin dropdown start-->
+        <ul class="nav pull-right top-menu">
+
+          <!-- user login dropdown start-->
+        <!--  <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">-->
+                         
+                          <h4>RAZES IT SOLUTIONS</h4>
+                           <!-- <b class="caret"></b>
+                        </a>
+            <ul class="dropdown-menu extended logout">
+              <div class="log-arrow-up"></div>
+              <li class="eborder-top">
+                <a href="http://razessolutions.com"><i class="icon_profile"></i>about the company</a>
+              </li>
+  
+               <li>
+                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+              </li>-->
+                   <style >
+                h4{
+                color:#fd9f08;
+              }
+              </style>
+           
+        </ul>
+        <!-- notificatoin dropdown end-->
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+<aside>
+ <div id="sidebar" class="nav-collapse ">
+ <!-- sidebar menu start-->
+<ul class="sidebar-menu">
+ <li class="active">
+ <a class="" href="index.html">
+ <i class="icon_house_alt"></i>
+ <span>Dashboard</span>
+ </a>
+  </li>
+
+ <!--vehicle-->
+ <li class="sub-menu">
+ <a href="javascript:;" class="">
+<i class="fa fa-car" aria-hidden="true"></i>
+ <span>Vehicle</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+          
+              <li><a href="Vehicle Management.html">Vehicle Management</a></li>
+              <li><a href="Add Vehicle.html">Add Vehicle</a>
+            </ul>
+            <!--driver-->
+             <li class="sub-menu">
+ <a href="javascript:;" class="">
+<i class="icon_id"></i>
+ <span>Drivers</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+              <li><a href="Drivers Management.html">Drivers Management</a></li>
+              <li><a href="Add Driver.html">Add Driver</a>
+            </ul>
+          </li>
+     <!--trips-->
+     <li class="sub-menu">
+ <a href="javascript:;" class="">
+<i class="fa fa-retweet" aria-hidden="true"></i>
+ <span>Trips</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+          
+              <li><a href="Trips Management.html">Trips Management</a></li>
+              <li><a href="Add Trips.html">Add Trips</a>
+            </ul>
+      
+         <!--customers-->
+         <li class="sub-menu">
+ <a href="javascript:;" class="">
+<i class="fa fa-users" aria-hidden="true"></i>
+ <span>Customers</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+          
+              <li><a href="Customer Management.html">Customer Management</a></li>
+              <li><a href="Add Customer.html">Add Customer</a>
+            </ul>
+       
+         
+         <!--fuel-->
+          <li class="sub-menu">
+            <a href="javascript:;" class="">
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+                          <span>Fuel</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+              <li><a href="Fuel Management.html">Fuel Management</a></li>
+                <li><a href="Add Fuel.html">Add Fuel </a></li>
+            </ul>
+          </li>
+          <!--income&expenses-->
+          <li class="sub-menu">
+ <a href="javascript:;" class="">
+  <i class="fa fa-usd" aria-hidden="true"></i>
+ <span>Inc&Exp</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+          
+              <li><a href=" Inc&Exp Management.html"> Inc&Exp Management</a></li>
+              <li><a href="Add Income.html">Add Income</a>
+            </ul>
+
+              <li><a href="Tracking.html">
+              <i class="fa fa-map-marker" aria-hidden="true"></i></i><span>Tracking</span></a></li>
+              <li><a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i><span>Login Page</span></a></li>
+              <li><a class="" href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i><span>Contact Page</span></a></li>
+           
+          
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+  
+       <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-usd" aria-hidden="true"></i></img><strong>Inc&Exp Management</h3></strong>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li> <i class="fa fa-usd" aria-hidden="true"></i></i>Inc&Exp</li>
+              <li></i>Inc&Exp Management</li>
+            </ol>
+          </div>
+
+                                 </div>
+                                 <!--inc&exp management-->
+           <div class="row">
+          <div class="col-lg-12">
+            <div class="container">
+            <section class="panel">
+              <header class="panel-heading">
+             <strong> List of Income and Expense</strong>
+                <style>
+              strong{
+                color: black;
+              }
+            </style>
+
+               <div class="text-right">
+                      <div class="btn">
+                     <a href="Add Income.html" class="btn btn-primary btn-sm" >Add New Income/Expense</a>
+              </header>
+              <table id="incomexpensetbl" class="table card-table">
+                      <thead>
+                        <tr>
+                          <th class="w-1">S.No</th>
+                          <th>Vehicle</th>
+                          <th>Date</th>
+                          <th>Type</th>
+                          <th>Description</th>
+                          <th>Amount</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                                              <tr>
+                           <td> 1</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2020-04-08</td>
+                           <td>expense</td>
+                           <td>testing</td>
+                         <td>400</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                          
+                        </tr>
+                                                <tr>
+                           <td> 2</td>
+                           <td> Mini Van</td>
+                           <td> 2020-04-15</td>
+                           <td>income</td>
+                           <td>--</td>
+                         <td>450</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 3</td>
+                           <td>Van</td>
+                           <td> 2020-04-20</td>
+                           <td>Expenses</td>
+                           <td>java</td>
+                         <td>500</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 4</td>
+                           <td> Bmu</td>
+                           <td> 2020-03-31</td>
+                           <td>income</td>
+                           <td>.net</td>
+                         <td>8998</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 5</td>
+                           <td> Xylo_ABC123</td>
+                           <td> 2020-03-01</td>
+                           <td>income</td>
+                           <td>Webdesign</td>
+                         <td>120000</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 6</td>
+                           <td> Benz-Tcm123</td>
+                           <td> 2020-04-17</td>
+                           <td>income</td>
+                           <td>Test</td>
+                         <td>10000</td>
+                             <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 7</td>
+                           <td> Temo traveller</td>
+                           <td> 2020-03-24</td>
+                           <td>expense</td>
+                           <td>Volvo-Qwe123</td>
+                         <td>3000</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 8</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2020-03-03</td>
+                           <td>expense</td>
+                           <td>eeee</td>
+                         <td>567</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 9</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2020-03-03</td>
+                           <td>income</td>
+                           <td>zFuel</td>
+                         <td>1234</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 10</td>
+                           <td> van</td>
+                           <td> 2020-03-03</td>
+                           <td>expense</td>
+                           <td>designer </td>
+                         <td>350</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 11</td>
+                           <td> Benz_TCM123</td>
+                           <td> 2020-02-06</td>
+                           <td>expense</td>
+                           <td>Fuel</td>
+                         <td>1000</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 12</td>
+                           <td> Tempo Traveller_ZXC123</td>
+                           <td> 2020-02-07</td>
+                           <td>income</td>
+                           <td>Trip</td>
+                         <td>2000</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 13</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2020-02-09</td>
+                           <td>income</td>
+                           <td>Trip</td>
+                         <td>3000</td>
+                              <td>
+                            <a class="icon" href="http://scripts.getsourcecodes.com/vms/incomexpense/editincomexpense/17">
+                              <i class="fe fe-edit"></i>
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 14</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2019-11-30</td>
+                           <td>expense</td>
+                           <td>Testing</td>
+                         <td>905</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 15</td>
+                           <td> Xylo_ABC123</td>
+                           <td> 2020-01-27</td>
+                           <td>income</td>
+                           <td>Test</td>
+                         <td>1000</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 16</td>
+                           <td> Tempo Traveller_ZXC123</td>
+                           <td> 2020-11-11</td>
+                           <td>income</td>
+                           <td>Test</td>
+                         <td>1300</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 17</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2020-11-12</td>
+                           <td>income</td>
+                           <td>graphic designer</td>
+                         <td>7880</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 18</td>
+                           <td> Volvo_QWE123</td>
+                           <td> 2019-10-01</td>
+                           <td>expense</td>
+                           <td>digitak marketing</td>
+                         <td>1200</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 19</td>
+                           <td> Volvo_QWE123</td>
+                           <td> 2019-12-25</td>
+                           <td>income</td>
+                           <td>Ecommerce</td>
+                         <td>1200</td>
+                              <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                                                <tr>
+                           <td> 20</td>
+                           <td> Mini Van_XYZ123</td>
+                           <td> 2019-05-25</td>
+                           <td>income</td>
+                           <td>java</td>
+                         <td>1400</td>
+                               <td>
+                              <a class="icon" href="Add Inc.html">
+                             <span class="glyphicon glyphicon-edit"></span> 
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>     
+  
+               
+                   <!--footer-->
+            <div class="text-right">
+      <div class="credits">
+      
+         <footer class="footer white-bg">
+
+      
+          <h4>Copyright &copy; 2020, Razes it solutions</h4>
+          Designed by <a href="http://razessolutions.com">Razes it Solutions</a>
+          
+        </div>
+    </div>
+    <!-- javascripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- nice scroll -->
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+
+  <!-- jquery ui -->
+  <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
+  <!--custom checkbox & radio-->
+  <script type="text/javascript" src="js/ga.js"></script>
+  <!--custom switch-->
+  <script src="js/bootstrap-switch.js"></script>
+  <!--custom tagsinput-->
+  <script src="js/jquery.tagsinput.js"></script>
+
+  <!-- colorpicker -->
+
+  <!-- bootstrap-wysiwyg -->
+  <script src="js/jquery.hotkeys.js"></script>
+  <script src="js/bootstrap-wysiwyg.js"></script>
+  <script src="js/bootstrap-wysiwyg-custom.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/bootstrap-colorpicker.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <!-- ck editor -->
+  <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
+  <!-- custom form component script for this page-->
+  <script src="js/form-component.js"></script>
+  <!-- custome script for all page -->
+  <script src="js/scripts.js"></script>
+
+
+  </body>
+</html>
