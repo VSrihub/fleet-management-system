@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: vehicle-management-service
+  jpa:
+    show-sql: true
+    generate-ddl: true
+  profiles:
+    active:
+    - dev
+server:
+  port: 9191
+
+springdoc:
+  swagger-ui:
+    path: /vehicle-service.html
+  api-docs:
+    enabled: true
+    path: /vehicle-service.doc
+
+info:
+ application: 
+  name: vehicle management system
+  version: 1.0
+ databse: mysql5.46
+
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    root: info
+---
+spring:
+  profiles: dev
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/vehicle-management-service
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+---
+spring:
+  profiles: stage
+  h2:
+    console:
+      enabled: true
+      path: /h2Console
