@@ -1,0 +1,3 @@
+FROM java:8
+ADD target/vehicle-management-service.jar vehicle-management-service.jar
+ENTRYPOINT [ "java","-jar","vehicle-management-service.jar" ]
